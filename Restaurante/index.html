@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sabor Caseiro | Restaurante em Belo Horizonte</title>
+    <meta name="description" content="Comida de verdade, feita com carinho. Delivery, almoço e jantar em Belo Horizonte. Peça agora pelo WhatsApp!" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ========== HEADER ========== -->
+    <header class="header">
+        <div class="container header-inner">
+            <div class="logo">
+                <img src="imagens/logo.PNG" alt="Sabor Caseiro" width="180" height="50" />
+            </div>
+            <button class="menu-toggle" aria-label="Menu" id="menuToggle">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav" id="navMenu">
+                <ul>
+                    <li><a href="#cardapio">Cardápio</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#localizacao">Localização</a></li>
+                    <li><a href="#contato" class="btn-nav">Peça já</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <span class="hero-tag">🍽️ Cozinha afetiva</span>
+            <h1>Sabor <span class="highlight">Caseiro</span></h1>
+            <p class="hero-sub">Comida de verdade, feita com carinho e ingredientes selecionados</p>
+            <div class="hero-buttons">
+                <a href="https://wa.me/5531999999999?text=Olá! Quero fazer um pedido no Sabor Caseiro." target="_blank" class="btn btn-primary">
+                    🛵 Delivery WhatsApp
+                </a>
+                <a href="#cardapio" class="btn btn-secondary">Ver cardápio</a>
+            </div>
+            <div class="hero-stats">
+                <div><span>+2.000</span><br />pedidos entregues</div>
+                <div><span>4.8★</span><br />avaliação média</div>
+                <div><span>15</span><br />anos de história</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CARDÁPIO ========== -->
+    <section class="cardapio" id="cardapio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Nosso cardápio</span>
+                <h2>Destaques da <span class="highlight">casa</span></h2>
+                <p>Receitas tradicionais com um toque especial de afeto</p>
+            </div>
+            
+            <div class="categorias">
+                <button class="categoria-btn active" data-categoria="todos">Todos</button>
+                <button class="categoria-btn" data-categoria="almoco">Almoço</button>
+                <button class="categoria-btn" data-categoria="jantar">Jantar</button>
+                <button class="categoria-btn" data-categoria="bebidas">Bebidas</button>
+                <button class="categoria-btn" data-categoria="sobremesas">Sobremesas</button>
+            </div>
+
+            <div class="cardapio-grid" id="cardapioGrid">
+                <div class="prato-card" data-categoria="almoco">
+                    <img src="imagens/prato1.PNG" alt="Frango com Quiabo" loading="lazy" />
+                    <div class="prato-info">
+                        <h3>Frango com Quiabo</h3>
+                        <p>Frango caipira refogado com quiabo e temperos caseiros. Acompanha arroz, feijão tropeiro e couve.</p>
+                        <span class="preco">R$ 34,90</span>
+                        <a href="https://wa.me/5531999999999?text=Olá! Quero pedir o Frango com Quiabo." target="_blank" class="btn-order">Pedir</a>
+                    </div>
+                </div>
+
+                <div class="prato-card" data-categoria="almoco">
+                    <img src="imagens/prato2.PNG" alt="Feijoada" loading="lazy" />
+                    <div class="prato-info">
+                        <h3>Feijoada Completa</h3>
+                        <p>Feijoada com carnes nobres, acompanhada de arroz, couve, farofa, laranja e torresmo. Serve 2 pessoas.</p>
+                        <span class="preco">R$ 49,90</span>
+                        <a href="https://wa.me/5531999999999?text=Olá! Quero pedir a Feijoada." target="_blank" class="btn-order">Pedir</a>
+                    </div>
+                </div>
+
+                <div class="prato-card" data-categoria="jantar">
+                    <img src="imagens/prato3.PNG" alt="Filé à Parmegiana" loading="lazy" />
+                    <div class="prato-info">
+                        <h3>Filé à Parmegiana</h3>
+                        <p>Filé mignon empanado, coberto com molho especial e queijo gratinado. Acompanha arroz, fritas e salada.</p>
+                        <span class="preco">R$ 42,90</span>
+                        <a href="https://wa.me/5531999999999?text=Olá! Quero pedir o Filé à Parmegiana." target="_blank" class="btn-order">Pedir</a>
+                    </div>
+                </div>
+
+                <div class="prato-card" data-categoria="jantar">
+                    <img src="imagens/prato4.PNG" alt="Lasanha" loading="lazy" />
+                    <div class="prato-info">
+                        <h3>Lasanha Bolonhesa</h3>
+                        <p>Camadas de massa fresca, molho bolonhesa e queijo. Gratinada no forno. Acompanha salada.</p>
+                        <span class="preco">R$ 38,90</span>
+                        <a href="https://wa.me/5531999999999?text=Olá! Quero pedir a Lasanha." target="_blank" class="btn-order">Pedir</a>
+                    </div>
+                </div>
+
+                <div class="prato-card" data-categoria="bebidas">
+                    <img src="imagens/prato5.PNG" alt="Suco Natural" loading="lazy" />
+                    <div class="prato-info">
+                        <h3>Suco Natural</h3>
+                        <p>Sabores: laranja, limão, abacaxi com hortelã, maracujá. Feitos na hora com frutas selecionadas.</p>
+                        <span class="preco">R$ 8,90</span>
+                        <a href="https://wa.me/5531999999999?text=Olá! Quero pedir um Suco Natural." target="_blank" class="btn-order">Pedir</a>
+                    </div>
+                </div>
+
+                <div class="prato-card" data-categoria="sobremesas">
+                    <img src="imagens/prato6.PNG" alt="Pudim" loading="lazy" />
+                    <div class="prato-info">
+                        <h3>Pudim Caseiro</h3>
+                        <p>Pudim de leite com calda de caramelo. Receita tradicional da família.</p>
+                        <span class="preco">R$ 12,90</span>
+                        <a href="https://wa.me/5531999999999?text=Olá! Quero pedir o Pudim." target="_blank" class="btn-order">Pedir</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="https://wa.me/5531999999999?text=Olá! Quero ver o cardápio completo." target="_blank" class="btn btn-primary">
+                    📋 Cardápio completo no WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SOBRE ========== -->
+    <section class="sobre" id="sobre">
+        <div class="container sobre-inner">
+            <div class="sobre-imagem">
+                <img src="imagens/hero-bg.PNG" alt="Interior do restaurante" loading="lazy" />
+            </div>
+            <div class="sobre-texto">
+                <span class="section-tag">Nossa história</span>
+                <h2>Receitas que <span class="highlight">abrigam memórias</span></h2>
+                <p>Há 15 anos, o Sabor Caseiro nasceu da vontade de compartilhar o prazer de uma boa refeição em família. Nossa cozinha é movida a ingredientes frescos, temperos caseiros e muito carinho.</p>
+                <p>Cada prato carrega uma história, um toque especial que só a comida feita com amor tem. Venha experimentar o sabor de casa.</p>
+                <ul class="sobre-lista">
+                    <li>✔ Ingredientes frescos e selecionados</li>
+                    <li>✔ Receitas tradicionais da cozinha mineira</li>
+                    <li>✔ Delivery rápido e seguro</li>
+                    <li>✔ Ambiente acolhedor e familiar</li>
+                </ul>
+                <a href="https://wa.me/5531999999999" target="_blank" class="btn btn-primary">Faça seu pedido</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== DEPOIMENTOS ========== -->
+    <section class="depoimentos" id="depoimentos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">O que nossos clientes dizem</span>
+                <h2>Quem prova <span class="highlight">recomenda</span></h2>
+            </div>
+            <div class="depoimentos-grid">
+                <div class="depoimento-card">
+                    <div class="estrelas">★★★★★</div>
+                    <p>"Melhor comida caseira de BH! O frango com quiabo é divino e a feijoada é a melhor que já comi. Delivery super rápido."</p>
+                    <div class="depoimento-autor">
+                        <img src="imagens/depoimento1.jpg" alt="Cliente 1" loading="lazy" />
+                        <div>
+                            <strong>Mariana S.</strong>
+                            <span>Cliente há 3 anos</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="depoimento-card">
+                    <div class="estrelas">★★★★★</div>
+                    <p>"O Sabor Caseiro virou tradição aqui em casa. Todo domingo pedimos o almoço e sempre é uma surpresa deliciosa!"</p>
+                    <div class="depoimento-autor">
+                        <img src="imagens/depoimento2.jpg" alt="Cliente 2" loading="lazy" />
+                        <div>
+                            <strong>Carlos R.</strong>
+                            <span>Cliente há 2 anos</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="depoimento-card">
+                    <div class="estrelas">★★★★★</div>
+                    <p>"Atendimento excelente, comida maravilhosa e preço justo. O pudim caseiro é o melhor da cidade, sem dúvida!"</p>
+                    <div class="depoimento-autor">
+                        <img src="imagens/depoimento1.jpg" alt="Cliente 3" loading="lazy" />
+                        <div>
+                            <strong>Ana P.</strong>
+                            <span>Cliente há 1 ano</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="depoimentos-obs">* Depoimentos são demonstrações para fins de portfólio</p>
+        </div>
+    </section>
+
+    <!-- ========== LOCALIZAÇÃO ========== -->
+    <section class="localizacao" id="localizacao">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Onde estamos</span>
+                <h2>Venha nos <span class="highlight">conhecer</span></h2>
+            </div>
+            <div class="localizacao-inner">
+                <div class="localizacao-info">
+                    <div class="info-item">
+                        <strong>📌 Endereço</strong>
+                        <p>Rua dos Sabores, 456 - Savassi<br />Belo Horizonte - MG, 30123-456</p>
+                    </div>
+                    <div class="info-item">
+                        <strong>🕐 Horário de funcionamento</strong>
+                        <p>Segunda a Sábado: 11h – 23h<br />Domingo: 11h – 16h</p>
+                    </div>
+                    <div class="info-item">
+                        <strong>📞 Delivery</strong>
+                        <p>(31) 99999-9999</p>
+                        <a href="https://wa.me/5531999999999" target="_blank" class="btn btn-primary btn-small">Pedir delivery</a>
+                    </div>
+                </div>
+                <div class="localizacao-mapa">
+                    <div class="mapa-placeholder">
+                        <p>📍 Google Maps</p>
+                        <span>Insira o iframe do mapa aqui</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTATO ========== -->
+    <section class="contato" id="contato">
+        <div class="container">
+            <div class="contato-inner">
+                <div class="contato-texto">
+                    <span class="section-tag">Faça seu pedido</span>
+                    <h2>Comida <span class="highlight">caseira</span> na sua mesa</h2>
+                    <p>Peça agora pelo WhatsApp e receba em casa. Ou venha nos visitar e experimente o sabor de verdade.</p>
+                    <a href="https://wa.me/5531999999999?text=Olá! Quero fazer um pedido no Sabor Caseiro." target="_blank" class="btn btn-primary btn-large">
+                        🛵 Pedir delivery
+                    </a>
+                    <p class="contato-resposta">⏱️ Entregamos em até 45 minutos</p>
+                </div>
+                <div class="contato-form">
+                    <form id="formContato" action="#" method="POST">
+                        <input type="text" placeholder="Seu nome" required />
+                        <input type="email" placeholder="Seu e-mail" />
+                        <input type="tel" placeholder="(31) 99999-9999" id="telefone" required />
+                        <textarea placeholder="Mensagem (opcional)" rows="3"></textarea>
+                        <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== RODAPÉ ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-col">
+                    <img src="imagens/logo.svg" alt="Sabor Caseiro" width="160" />
+                    <p>Comida de verdade, feita com carinho desde 2010</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Links rápidos</h4>
+                    <ul>
+                        <li><a href="#cardapio">Cardápio</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#depoimentos">Depoimentos</a></li>
+                        <li><a href="#localizacao">Localização</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <p>(31) 99999-9999</p>
+                    <p>Rua dos Sabores, 456 - BH</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram">📸</a>
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="WhatsApp">💬</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sabor Caseiro. Desenvolvido por <a href="#">WebLocal</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== BOTÃO FLUTUANTE WHATSAPP ========== -->
+    <a href="https://wa.me/5531999999999?text=Olá! Quero fazer um pedido no Sabor Caseiro." target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" width="28" height="28">
+            <path fill="white" d="M12.032 21.965c-1.821 0-3.574-.497-5.063-1.403l-4.676 1.547 1.548-4.617c-1.099-1.614-1.694-3.494-1.694-5.461 0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10zm0-18.958c-4.951 0-8.979 4.028-8.979 8.979 0 1.674.467 3.319 1.356 4.747l-.898 2.681 2.733-.895c1.374.801 2.953 1.249 4.602 1.249 4.951 0 8.979-4.028 8.979-8.979s-4.028-8.979-8.979-8.979zm4.928 6.237c-.18-.464-.727-.895-1.29-.979-.182 0-.348-.018-.511-.018-.21 0-.366.068-.514.303-.284.454-1.025 1.239-1.215 1.486-.183.251-.304.274-.555.009-.968-.947-1.618-1.741-2.243-2.549-.167-.216-.428-.434-.669-.566-.331-.18-.692-.171-.943-.171-.358 0-.719.023-1.078.11-.294.072-.59.225-.808.552-.302.456-.94 1.153-.94 2.811s.962 3.261 1.097 3.486c.135.224 1.894 2.893 4.589 3.873 2.695.98 2.695.653 3.181.604.486-.049 1.568-.641 1.789-1.259.221-.618.221-1.149.155-1.259s-.317-.189-.562-.355c-.274-.189-1.371-.676-1.582-.755-.211-.079-.366-.118-.52.118-.154.236-.595.755-.729.91-.135.154-.27.172-.5.059-.294-.11-1.181-.438-2.246-1.388-.832-.741-1.393-1.661-1.556-1.942-.162-.281-.018-.434.122-.574.126-.126.28-.328.42-.493.141-.166.187-.284.282-.473.094-.189.047-.354-.023-.497-.071-.142-.314-.75-.482-1.242z"/>
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
